@@ -1,6 +1,12 @@
+import Intro from "./Intro/Intro"
+import GlobalStyles from './GlobalStyle'
+
 const App = () => {
   return (
-    <>Nndsdmm</>)
+    <>
+    <Intro />
+    <GlobalStyles/>
+    </>)
 }
 
-export default App;
+export default App
