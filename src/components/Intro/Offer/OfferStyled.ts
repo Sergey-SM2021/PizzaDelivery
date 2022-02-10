@@ -1,8 +1,17 @@
 import styled from 'styled-components'
 import bg from "../../../img/background.png"
 
+export const Content = styled.div`
+    width: 410px;
+    position: relative;
+    left: 268px;
+    @media(max-width:1000px){
+        left: 180px;
+    }
+`
+
 export const P = styled.p`
-    width:447px;
+    width:100%;
         @media(max-width: 1000px){
             width: 400px;
         }
@@ -16,14 +25,6 @@ export const Img = styled.img`
     @media(max-width: 1000px){
         height: 500px;
         top: 120px;
-    }
-`
-
-export const Content = styled.div`
-    position: relative;
-    left: 270px;
-    @media(max-width:1000px){
-        left: 180px;
     }
 `
 
@@ -54,22 +55,5 @@ export const Flex = styled.div`
 `
 
 export const H1 = styled.h1`
-    width: 30px;
-`
-
-export const Structure = styled.div`
-    font-weight: 300;
-    font-size: 18px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-`
-
-export const StructureItem = styled.div`
-    width:440px;
-        @media(max-width: 1000px){
-            width: 400px;
-        }
 `

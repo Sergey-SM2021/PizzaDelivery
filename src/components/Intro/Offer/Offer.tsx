@@ -1,38 +1,26 @@
 import { FC } from "react"
-import cheese from '../../../img/cheese.png'
-import tomato from '../../../img/tomato.png'
-import meat from '../../../img/meat.png'
-import Pizza from '../../../img/Pizza-bg-intro.png'
-import { Content, Flex, H1, Img, Main, P, Structure, StructureItem } from "./OfferStyled"
+import { observer } from "mobx-react-lite"
 
-const Offer:FC = () => {
-    return(<Main>
+import Pizza from '../../../img/Pizza-bg-intro.png'
+import { Content, Flex, H1, Img, Main, P } from "./OfferStyled"
+import Structure from './Structure/Structure'
+import OfferStore from "../../../mobX/OfferStore"
+
+const Offer: FC = () => {
+    return (<Main>
         <Content>
-            <H1>Пепперони (Классика)  </H1>
-            <P>
-                Бессмертная итальянская классика
-                с новым взглядом на рецептуру.
-                Из каменной печи уже в России.
-            </P>
-            <Structure>
-                <img src={cheese} />
-                <StructureItem>Моцарелла, Эмменталь, Горгонзола, Пармезан</StructureItem>
-            </Structure>
-            <Structure>
-                <img src={tomato} />
-                <StructureItem>Свежие томаты, оливки, базилик, тимьян, орегано</StructureItem>
-            </Structure>
-            <Structure>
-                <img src={meat} />
-                <StructureItem>Ветчина, Колбаса, Пепперони</StructureItem>
-            </Structure>
+            <H1>{OfferStore.title}</H1>
+            <P>{
+                OfferStore.description
+            }</P>
+            {OfferStore.structure.map(el => <Structure img={el.img} structure={el.structure} />)}
             <Flex>
                 <button>В корзину</button>
-                <div>320$</div>
+                <div>{OfferStore.price}</div>
             </Flex>
         </Content>
         <Img src={Pizza} />
     </Main>)
 }
 
-export default Offer
+export default observer(Offer)
