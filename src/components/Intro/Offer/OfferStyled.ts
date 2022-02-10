@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bg from "../../img/background.png"
+import bg from "../../../img/background.png"
 
 export const P = styled.p`
     width:447px;
@@ -39,30 +39,37 @@ export const Main = styled.div`
     align-items:center;
 `
 
-export const Header = styled.div`
-    width:100%;
-    color: #F3F3F3;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    top: 0px;   
-    position: fixed;
-    background: #242424;
-`
-
 export const Container = styled.div`
     height:100%;
     width: 80%;
     margin: 0px auto;
 `
 
-export const Nav = styled.div`
+export const Flex = styled.div`
     height:100%;
     align-items:center;
     display:flex;
-    justify-content: space-between;
+    color: white;
+    justify-content: space-around;
 `
 
-export const NavItem = styled.div`
-    margin-left:15px;
+export const H1 = styled.h1`
+    width: 30px;
+`
+
+export const Structure = styled.div`
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+`
+
+export const StructureItem = styled.div`
+    width:440px;
+        @media(max-width: 1000px){
+            width: 400px;
+        }
 `

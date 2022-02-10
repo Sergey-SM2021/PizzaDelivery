@@ -1,4 +1,4 @@
-import Intro from "./Intro/Intro"
+import Intro from "../pages/Intro"
 import GlobalStyles from './GlobalStyle'
 
 const App = () => {
