@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const StructureWrapper = styled.div`
     font-weight: 300;
     font-size: 18px;
     width: 100%;

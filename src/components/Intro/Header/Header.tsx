@@ -1,8 +1,8 @@
 import { FC } from "react"
-import { Container, Header, Nav, NavItem } from "./HeaderStyled"
+import { Container, HeaderWrapper, Nav, NavItem } from "./HeaderStyled"
 
-const MyHeader:FC = () => {
-    return (<Header>
+const Header:FC = () => {
+    return (<HeaderWrapper>
         <Container>
             <Nav>
                 <div>LOGO</div>
@@ -14,7 +14,7 @@ const MyHeader:FC = () => {
                 <div>Промокод</div>
             </Nav>
         </Container>
-    </Header>)
+    </HeaderWrapper>)
 }
 
-export default MyHeader
+export default Header

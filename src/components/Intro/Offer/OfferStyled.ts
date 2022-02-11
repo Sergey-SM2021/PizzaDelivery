@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import bg from "../../../img/background.png"
 
 export const Content = styled.div`
@@ -10,7 +11,7 @@ export const Content = styled.div`
     }
 `
 
-export const P = styled.p`
+export const Description = styled.p`
     width:100%;
         @media(max-width: 1000px){
             width: 400px;
@@ -28,7 +29,7 @@ export const Img = styled.img`
     }
 `
 
-export const Main = styled.div`
+export const OfferWrapper = styled.div`
     background-size: cover;
     position: relative;
     color: #F3F3F3;
@@ -46,7 +47,7 @@ export const Container = styled.div`
     margin: 0px auto;
 `
 
-export const Flex = styled.div`
+export const DishInfo = styled.div`
     height:100%;
     align-items:center;
     display:flex;
@@ -54,6 +55,6 @@ export const Flex = styled.div`
     justify-content: space-around;
 `
 
-export const H1 = styled.h1`
+export const Title = styled.h1`
     width: 100%;
 `

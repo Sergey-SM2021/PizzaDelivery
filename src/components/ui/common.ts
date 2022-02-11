@@ -23,14 +23,13 @@ export default createGlobalStyle`
     }
 
     button{
-        background: #F4900C;
-        width: 160px;
-        height: 30px;
-        border: none;
-        border-radius: 4px;
-        transition: 0.9s;  
-        &:Hover{
-            box-shadow: 17px 4px 50px #000; 
-        }
+    background: #F4900C;
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.9s;  
+    &:Hover{
+        box-shadow: 17px 4px 50px #000; 
     }
-`
+}`

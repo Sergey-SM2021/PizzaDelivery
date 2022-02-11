@@ -1,17 +1,18 @@
-import { FC } from "react";
-import { IItem } from "../../models/model";
-import Structure from "../Structure/Structure";
-import { Container } from "./ItemStyled";
+import { FC } from "react"
+
+import { IItem } from "../../models/model"
+import Structure from "../Structure/Structure"
+import { ItemWrapper } from "./ItemStyled"
 import Icon from '../../img/cake.png'
 
 const Item:FC<IItem> = ({description,price,structure,title}) => {
-    return(<Container>
+    return(<ItemWrapper>
         <img src={Icon} />
         <h3>Чизбургер</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, quas dicta animi</p>
         <Structure structure={["Булка","Молоко","Масло"]} img={Icon}/>
         <button>8989</button>
-    </Container>)
+    </ItemWrapper>)
 }
 
 export default Item

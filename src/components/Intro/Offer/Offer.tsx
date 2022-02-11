@@ -2,25 +2,25 @@ import { FC } from "react"
 import { observer } from "mobx-react-lite"
 
 import Pizza from '../../../img/Pizza-bg-intro.png'
-import { Content, Flex, H1, Img, Main, P } from "./OfferStyled"
+import { Content, DishInfo, Title, Img, OfferWrapper, Description } from "./OfferStyled"
 import Structure from '../../Structure/Structure'
 import OfferStore from "../../../mobX/OfferStore"
 
 const Offer: FC = () => {
-    return (<Main>
+    return (<OfferWrapper>
         <Content>
-            <H1>{OfferStore.Item.title}</H1>
-            <P>{
+            <Title>{OfferStore.Item.title}</Title>
+            <Description>{
                 OfferStore.Item.description
-            }</P>
+            }</Description>
             {OfferStore.Item.structure.map(el => <Structure img={el.img} structure={el.structure} />)}
-            <Flex>
+            <DishInfo>
                 <button>В корзину</button>
                 <div>{OfferStore.Item.price}</div>
-            </Flex>
+            </DishInfo>
         </Content>
         <Img src={Pizza} />
-    </Main>)
+    </OfferWrapper>)
 }
 
 export default observer(Offer)

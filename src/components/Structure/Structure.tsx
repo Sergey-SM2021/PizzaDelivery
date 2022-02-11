@@ -1,12 +1,12 @@
 import { FC } from "react"
-import { StructureItem, Container } from "./StructureStyled"
+import { StructureItem, StructureWrapper } from "./StructureStyled"
 
 const Structure:FC<{img:string,structure:Array<string>}> = ({img, structure}) => {
     return (
-        <Container>
+        <StructureWrapper>
             <img src={img} />
             <StructureItem>{structure.join(", ")}</StructureItem>
-        </Container>
+        </StructureWrapper>
     )
 }
 

@@ -1,5 +1,5 @@
 import Intro from "./pages/Intro"
-import GlobalStyles from './components/GlobalStyle'
+import GlobalStyles from './components/ui/common'
 import Main from "./pages/Main"
 
 const App = () => {
