@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const MainWrapper = styled.div`
-    margin-top: 100px;
+    padding-top: 100px;
 `
 
 export const MainItems = styled.div`
@@ -22,5 +22,6 @@ export const MainItems = styled.div`
 `
 
 export const Title = styled.h2`
-    
+    margin-top: 30px;
+    margin-bottom: 10px;
 `

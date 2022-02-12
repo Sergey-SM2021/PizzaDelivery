@@ -8,7 +8,8 @@ export default createGlobalStyle`
     }
     
     h3{
-        font-size: 35px;
+        font-size: 31px;
+        font-weight: 500;
     }
 
     h1{

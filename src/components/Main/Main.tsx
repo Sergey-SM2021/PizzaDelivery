@@ -1,8 +1,8 @@
 import { FC } from "react"
 
-import Item from "../components/Item/Item"
-import { Container } from "../components/ui/common"
-import ItemsStore from "../mobX/ItemsStore"
+import Item from "../Item/Item"
+import { Container } from "../ui/common"
+import ItemsStore from "../../mobX/ItemsStore"
 import { MainItems, MainWrapper, Title } from "./MainStyled"
 
 const Main: FC = () => {
