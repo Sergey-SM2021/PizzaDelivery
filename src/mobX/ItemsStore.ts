@@ -1,9 +1,9 @@
 import { ItemsType } from './../models/model'
-import Pizza from '../img/pizza1.png'
-import sauces from '../img/sauces.png'
-import cheese from '../img/cheese.png'
-import tomato from '../img/tomato.png'
-import meat from '../img/meat.png'
+import Pizza from '../img/items/pizza1.png'
+import sauces from '../img/ui/sauces.png'
+import cheese from '../img/ui/cheese.png'
+import tomato from '../img/ui/tomato.png'
+import meat from '../img/ui/meat.png'
 
 import { makeAutoObservable } from "mobx"
 

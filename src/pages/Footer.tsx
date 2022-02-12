@@ -1,15 +1,14 @@
 import { FC } from "react"
 import styled from "styled-components"
 
-import vk from '../img/vk.png'
-import telegram from '../img/telegram.png'
-import inst from '../img/inst.png'
+import vk from '../img/footer/vk.png'
+import telegram from '../img/footer/telegram.png'
+import inst from '../img/footer/inst.png'
 import {Container as CommonContainer} from "../components/ui/common"
 
 const Footer: FC = () => {
     return (<FooterWrapper>
         <Container>
-        
             <div>© Escape with Pizza, 2022. Все права защищены.</div>
         <Icons>
             <Icon src={vk} />

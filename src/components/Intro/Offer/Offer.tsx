@@ -1,7 +1,6 @@
 import { FC } from "react"
 import { observer } from "mobx-react-lite"
 
-import Pizza from '../../../img/Pizza-bg-intro.png'
 import { Content, DishInfo, Title, Img, OfferWrapper, Description } from "./OfferStyled"
 import Structure from '../../Structure/Structure'
 import OfferStore from "../../../mobX/OfferStore"
@@ -22,7 +21,7 @@ const Offer: FC = () => {
                 <div>{OfferStore.Item.price}</div>
             </DishInfo>
         </Content>
-        <Img src={Pizza} />
+        <Img src={OfferStore.Item.img} />
     </OfferWrapper>)
 }
 

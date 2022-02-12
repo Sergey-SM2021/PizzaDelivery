@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import bg from "../../../img/background.png"
+import bg from "../../../img/intro/background.png"
 
 export const Content = styled.div`
     width: 410px;

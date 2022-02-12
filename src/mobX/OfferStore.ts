@@ -1,10 +1,10 @@
 import { makeAutoObservable } from "mobx"
 
-import cheese from '../img/cheese.png'
-import tomato from '../img/tomato.png'
-import meat from '../img/meat.png'
+import cheese from '../img/ui/cheese.png'
+import tomato from '../img/ui/tomato.png'
+import meat from '../img/ui/meat.png'
 import { IItem } from "../models/model"
-import pizza from '../img/pizza1.png'
+import pizza from '../img/intro/Pizza-bg-intro.png'
 
 class OfferStore {
     constructor() {
