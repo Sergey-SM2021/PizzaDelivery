@@ -21,6 +21,9 @@ export const Description = styled.p`
         @media(max-width: 1000px){
             width: 400px;
         }
+        @media(max-width: 760px){
+            margin: 0px;
+    }
 `
 
 export const Img = styled.img`
@@ -67,6 +70,9 @@ export const Title = styled.h1`
     width: 100%;
     position: relative;
     margin: 10px 0px;
+    @media(max-width: 760px){
+        margin: 0px;
+    }
 `
 
 export const Price = styled.div`
@@ -84,4 +90,7 @@ export const Note = styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
+    @media(max-width: 760px){
+        top: -20px;
+    }
 `

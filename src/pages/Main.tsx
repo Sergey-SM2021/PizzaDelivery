@@ -1,8 +1,9 @@
 import { FC } from "react"
-import styled from "styled-components"
+
 import Item from "../components/Item/Item"
 import { Container } from "../components/ui/common"
 import ItemsStore from "../mobX/ItemsStore"
+import { MainItems, MainWrapper, Title } from "./MainStyled"
 
 const Main: FC = () => {
     return (<MainWrapper>
@@ -19,30 +20,9 @@ const Main: FC = () => {
                     </>)
                 )
             }
-
         </Container>
     </MainWrapper>
     )
 }
-
-const MainWrapper = styled.div`
-    margin-top: 100px;
-`
-
-const MainItems = styled.div`
-    row-gap: 24px;
-    justify-items: center;
-    width: 95%;
-    display: grid;
-    grid-template: 1fr/ 1fr 1fr 1fr;
-    @media(max-width: 1000px){
-        grid-template: 1fr/ 1fr 1fr;
-        width: 80%;
-    }
-`
-
-const Title = styled.h2`
-    
-`
 
 export default Main
