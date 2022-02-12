@@ -43,3 +43,8 @@ export const Button = styled.button`
         box-shadow: 17px 4px 50px #000; 
     }
 `
+
+export const Container = styled.div`
+    width: 80%;
+    margin-left: 20px;
+`

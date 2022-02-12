@@ -1,6 +1,7 @@
 import { FC } from "react"
 import styled from "styled-components"
 import Item from "../components/Item/Item"
+import { Container } from "../components/ui/common"
 import ItemsStore from "../mobX/ItemsStore"
 
 const Main: FC = () => {
@@ -42,11 +43,6 @@ const MainItems = styled.div`
 
 const Title = styled.h2`
     
-`
-
-const Container = styled.div`
-    width: 85%;
-    margin-left: 20px;
 `
 
 export default Main
