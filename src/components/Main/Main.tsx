@@ -4,9 +4,11 @@ import Item from "../Item/Item"
 import { Container } from "../ui/common"
 import ItemsStore from "../../mobX/ItemsStore"
 import { MainItems, MainWrapper, Title } from "./MainStyled"
+import Basket from "../Basket/Basket"
 
 const Main: FC = () => {
     return (<MainWrapper>
+        <Basket />
         <Container>
             {
                 ItemsStore.items.map(

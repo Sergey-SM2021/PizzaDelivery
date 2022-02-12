@@ -2,17 +2,36 @@ import styled from 'styled-components'
 
 import bg from "../../../img/intro/background.png"
 
-export const Content = styled.div`
-    width: 410px;
+export const OfferWrapper = styled.div`
+    padding-top: 21px;
+    background-size: cover;
     position: relative;
-    left: 268px;
-    @media(max-width:1000px){
-        left: 180px;
-    }
-    @media(max-width: 760px){
+    color: #F3F3F3;
+    background:url(${bg});
+    width: 100%;
+    display:flex;
+    height:100vh;
+    align-items:center;
+`
+
+export const StructureWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export const ContentInner = styled.div`
+    width: 400px;
+    position: relative;
+    flex-direction: column;
+    @media(max-width: 920px){
         z-index: 2;
-        left: 30px;
     }
+`
+
+export const Content = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 `
 
 export const Description = styled.p`
@@ -21,7 +40,7 @@ export const Description = styled.p`
         @media(max-width: 1000px){
             width: 400px;
         }
-        @media(max-width: 760px){
+        @media(max-width: 920px){
             margin: 0px;
     }
 `
@@ -35,21 +54,9 @@ export const Img = styled.img`
         height: 500px;
         top: 120px;
     }
-    @media(max-width: 760px){
+    @media(max-width: 920px){
         z-index: 1;
     }
-`
-
-export const OfferWrapper = styled.div`
-    background-size: cover;
-    position: relative;
-    color: #F3F3F3;
-    background:url(${bg});
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    height:100vh;
-    align-items:center;
 `
 
 export const Container = styled.div`
@@ -59,7 +66,7 @@ export const Container = styled.div`
 `
 
 export const DishInfo = styled.div`
-    height:100%;
+    height:45px;
     align-items:center;
     display:flex;
     color: white;
@@ -69,8 +76,7 @@ export const DishInfo = styled.div`
 export const Title = styled.h1`
     width: 100%;
     position: relative;
-    margin: 10px 0px;
-    @media(max-width: 760px){
+    @media(max-width: 920px){
         margin: 0px;
     }
 `
@@ -90,7 +96,7 @@ export const Note = styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
-    @media(max-width: 760px){
+    @media(max-width: 920px){
         top: -20px;
     }
 `

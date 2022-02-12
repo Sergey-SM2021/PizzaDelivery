@@ -14,7 +14,7 @@ export const MainItems = styled.div`
         grid-template: 1fr/ 1fr 1fr;
         width: 80%;
     }
-    @media(max-width: 760px){
+    @media(max-width: 920px){
         grid-template: 1fr/ 1fr;
         width: 80%;
         justify-items: start;

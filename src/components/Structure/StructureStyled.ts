@@ -9,7 +9,7 @@ export const StructureWrapper = styled.div`
     align-items: center;
     margin-bottom: 10px;
     margin: 15px 0px;
-    @media(max-width: 760px){
+    @media(max-width: 920px){
         margin: 0px;
     }
 `
