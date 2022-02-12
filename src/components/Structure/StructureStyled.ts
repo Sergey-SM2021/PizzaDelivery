@@ -8,6 +8,7 @@ export const StructureWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    margin: 15px 0px;
 `
 
 export const StructureItem = styled.div`

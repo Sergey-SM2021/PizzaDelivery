@@ -9,9 +9,14 @@ export const Content = styled.div`
     @media(max-width:1000px){
         left: 180px;
     }
+    @media(max-width: 760px){
+        z-index: 2;
+        left: 30px;
+    }
 `
 
 export const Description = styled.p`
+    margin: 5px 0px;
     width:100%;
         @media(max-width: 1000px){
             width: 400px;
@@ -26,6 +31,9 @@ export const Img = styled.img`
     @media(max-width: 1000px){
         height: 500px;
         top: 120px;
+    }
+    @media(max-width: 760px){
+        z-index: 1;
     }
 `
 
@@ -57,4 +65,23 @@ export const DishInfo = styled.div`
 
 export const Title = styled.h1`
     width: 100%;
+    position: relative;
+    margin: 10px 0px;
+`
+
+export const Price = styled.div`
+    font-size: 40px;
+    font-weight: 300;
+`
+
+export const Note = styled.div`
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    background: #BE1931;
+    height: 30px;
+    width: 110px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 `

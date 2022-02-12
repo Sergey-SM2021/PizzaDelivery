@@ -34,8 +34,11 @@ export default createGlobalStyle`
 
 export const Button = styled.button`
     background: #F4900C;
-    width: 160px;
-    height: 30px;
+    width: 165px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: large;
+    height: 34px;
     border: none;
     border-radius: 4px;
     transition: 0.9s;  
