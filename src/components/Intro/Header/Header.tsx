@@ -1,17 +1,20 @@
 import { FC } from "react"
-import { Container, HeaderWrapper, Nav, NavItem } from "./HeaderStyled"
+
+import logo from '../../../img/intro/Logo.png'
+import { Container } from "../../ui/common"
+import { HeaderWrapper, Logo, Nav, NavItem, PromoCode } from "./HeaderStyled"
 
 const Header:FC = () => {
     return (<HeaderWrapper>
         <Container>
             <Nav>
-                <div>LOGO</div>
+                <Logo src={logo}/>
                 <Nav>
                     <NavItem>О компании</NavItem>
                     <NavItem>Наш ресторан</NavItem>
                     <NavItem>Акции</NavItem>
                 </Nav>
-                <div>Промокод</div>
+                <PromoCode placeholder="     ПРОМОКОД"/>
             </Nav>
         </Container>
     </HeaderWrapper>)

@@ -3,7 +3,6 @@ import { FC } from "react"
 import { IItem } from "../../models/model"
 import Structure from "../Structure/Structure"
 import { Description, ItemWrapper, Name, Photo } from "./ItemStyled"
-import Pizza from '../../img/Pizza-bg-intro.png'
 import { Button } from "../ui/common"
 
 const Item:FC<IItem> = ({description,price,structure,title,img}) => {

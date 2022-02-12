@@ -11,12 +11,6 @@ export const HeaderWrapper = styled.div`
     background: #242424;
 `
 
-export const Container = styled.div`
-    height:100%;
-    width: 80%;
-    margin: 0px auto;
-`
-
 export const Nav = styled.div`
     height:100%;
     align-items:center;
@@ -26,4 +20,15 @@ export const Nav = styled.div`
 
 export const NavItem = styled.div`
     margin-left:15px;
+`
+
+export const Logo = styled.img`
+    height: 90%;
+`
+
+export const PromoCode = styled.input`
+    background: #242424;
+    border: 1px solid #ffffffcb;
+    color: #ffffffcb;
+    border-radius: 10px;
 `
