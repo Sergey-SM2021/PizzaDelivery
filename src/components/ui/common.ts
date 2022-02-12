@@ -1,9 +1,14 @@
 import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 export default createGlobalStyle`
     *{
     margin: 0px;
     padding: 0px;
+    }
+    
+    h3{
+        font-size: 35px;
     }
 
     h1{
@@ -22,7 +27,12 @@ export default createGlobalStyle`
         }
     }
 
-    button{
+    h2{
+        font-size: 42px;
+    }
+`
+
+export const Button = styled.button`
     background: #F4900C;
     width: 160px;
     height: 30px;
@@ -32,4 +42,4 @@ export default createGlobalStyle`
     &:Hover{
         box-shadow: 17px 4px 50px #000; 
     }
-}`
+`

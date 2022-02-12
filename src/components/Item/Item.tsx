@@ -2,16 +2,19 @@ import { FC } from "react"
 
 import { IItem } from "../../models/model"
 import Structure from "../Structure/Structure"
-import { ItemWrapper } from "./ItemStyled"
-import Icon from '../../img/cake.png'
+import { Description, ItemWrapper, Name, Photo } from "./ItemStyled"
+import Pizza from '../../img/Pizza-bg-intro.png'
+import { Button } from "../ui/common"
 
-const Item:FC<IItem> = ({description,price,structure,title}) => {
+const Item:FC<IItem> = ({description,price,structure,title,img}) => {
     return(<ItemWrapper>
-        <img src={Icon} />
-        <h3>Чизбургер</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, quas dicta animi</p>
-        <Structure structure={["Булка","Молоко","Масло"]} img={Icon}/>
-        <button>8989</button>
+        <Photo src={img} />
+        <Name>{title}</Name>
+        <Description>{description}</Description>
+        {
+            structure?.map(str => <Structure structure={str.structure} img={str.img} />)
+        }
+        <Button>{price}</Button>
     </ItemWrapper>)
 }
 

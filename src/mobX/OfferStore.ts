@@ -4,12 +4,15 @@ import cheese from '../img/cheese.png'
 import tomato from '../img/tomato.png'
 import meat from '../img/meat.png'
 import { IItem } from "../models/model"
+import pizza from '../img/pizza1.png'
 
 class OfferStore {
     constructor() {
         makeAutoObservable(this)
     }
     Item: IItem = {
+        img:pizza,
+        id:"aaasjdkjfkj",
         price: 700,
         title: "Пепперони",
         description: "Бессмертная итальянская классика с новым взглядом на рецептуру. Из каменной печи уже в России.",
