@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BasketWrapper = styled.div`
     position: fixed;
+    width: 230px;
     right: 0px;
     top: 100px;
 `
@@ -32,4 +33,9 @@ export const Icon = styled.img`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+`
+
+export const Footer = styled.div`
+    display: flex;
+    justify-content: center;
 `
