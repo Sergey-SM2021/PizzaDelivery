@@ -5,8 +5,13 @@ import { Content, DishInfo, Title, Img, OfferWrapper, Description, Price, Note, 
 import Structure from '../../Structure/Structure'
 import OfferStore from "../../../mobX/OfferStore"
 import { Button, Container } from "../../ui/common"
+import basketStore from "../../../mobX/basketStore"
 
 const Offer: FC = () => {
+    const ClickHandler = () => {
+        basketStore.addPizza(OfferStore.Item)
+    }
+
     return (<OfferWrapper>
         <Container>
             <Content>
@@ -24,7 +29,7 @@ const Offer: FC = () => {
                         }
                     </StructureWrapper>
                     <DishInfo>
-                        <Button>В корзину</Button>
+                        <Button onClick={ClickHandler}>В корзину</Button>
                         <Price>{OfferStore.Item.price}р</Price>
                     </DishInfo>
                 </ContentInner>

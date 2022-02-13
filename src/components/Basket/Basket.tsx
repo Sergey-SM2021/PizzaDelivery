@@ -4,7 +4,7 @@ import { BasketWrapper, Container, Footer, Header, Icon, Items, Promocode, Resul
 import { observer } from "mobx-react-lite"
 import basketStore from "../../mobX/basketStore"
 import { FC } from "react"
-import Item from "./Item"
+import Item from "./Item/Item"
 
 const Basket: FC = () => {
     return (<BasketWrapper>
@@ -19,7 +19,7 @@ const Basket: FC = () => {
             </Items>
             <Result>
                 <div>Итог:</div>
-                <div>3070</div>
+                <div>{basketStore.price}</div>
             </Result>
             <Promocode placeholder="промокод" />
             <Footer>
