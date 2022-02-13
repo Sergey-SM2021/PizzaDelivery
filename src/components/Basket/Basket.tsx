@@ -2,7 +2,7 @@ import { Button } from "../ui/common"
 import icon from '../../img/basket/basket.png'
 import { BasketWrapper, Container, Footer, Header, Icon, Items, Promocode, Result } from "./BasketStyled"
 import { observer } from "mobx-react-lite"
-import basketStore from "../../mobX/basketStore"
+import basketStore from "../../stores/basketStore"
 import { FC } from "react"
 import Item from "./Item/Item"
 

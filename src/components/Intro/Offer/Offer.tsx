@@ -3,9 +3,9 @@ import { observer } from "mobx-react-lite"
 
 import { Content, DishInfo, Title, Img, OfferWrapper, Description, Price, Note, StructureWrapper, ContentInner } from "./OfferStyled"
 import Structure from '../../Structure/Structure'
-import OfferStore from "../../../mobX/OfferStore"
+import OfferStore from "../../../stores/OfferStore"
 import { Button, Container } from "../../ui/common"
-import basketStore from "../../../mobX/basketStore"
+import basketStore from "../../../stores/basketStore"
 
 const Offer: FC = () => {
     const ClickHandler = () => {

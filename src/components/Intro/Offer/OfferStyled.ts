@@ -70,7 +70,7 @@ export const DishInfo = styled.div`
     align-items:center;
     display:flex;
     color: white;
-    justify-content: space-around;
+    justify-content: space-between;
 `
 
 export const Title = styled.h1`
@@ -87,12 +87,13 @@ export const Price = styled.div`
 `
 
 export const Note = styled.div`
+    margin: 0px;
     position: absolute;
-    top: -30px;
+    top: -20px;
     font-size: 20px;
     background: #BE1931;
     height: 30px;
-    width: 110px;
+    width: 160px;
     justify-content: center;
     display: flex;
     align-items: center;

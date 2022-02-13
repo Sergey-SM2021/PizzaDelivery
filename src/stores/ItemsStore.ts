@@ -1,4 +1,4 @@
-import { ItemsType } from './../models/model'
+import { ItemsType } from '../models/model'
 import Pizza from '../img/items/pizza1.png'
 import sauces from '../img/ui/sauces.png'
 import cheese from '../img/ui/cheese.png'

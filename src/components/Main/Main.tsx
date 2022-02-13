@@ -2,7 +2,7 @@ import { FC } from "react"
 
 import Item from "../Item/Item"
 import { Container } from "../ui/common"
-import ItemsStore from "../../mobX/ItemsStore"
+import ItemsStore from "../../stores/ItemsStore"
 import { MainItems, MainWrapper, Title } from "./MainStyled"
 import Basket from "../Basket/Basket"
 
