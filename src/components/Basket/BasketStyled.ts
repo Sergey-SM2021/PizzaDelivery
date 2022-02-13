@@ -39,3 +39,9 @@ export const Footer = styled.div`
     display: flex;
     justify-content: center;
 `
+
+export const EmptyBasket = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
