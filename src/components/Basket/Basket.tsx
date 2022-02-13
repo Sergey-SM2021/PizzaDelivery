@@ -3,9 +3,10 @@ import { FC } from "react"
 
 import { Button } from "../ui/common"
 import icon from '../../img/basket/basket.png'
-import { BasketWrapper, Container, EmptyBasket, Footer, Header, Icon, Items, Promocode, Result } from "./BasketStyled"
+import { BasketWrapper, Buy, Container, EmptyBasket, Footer, Header, Icon, Items, Promocode, Result } from "./BasketStyled"
 import basketStore from "../../stores/basketStore"
 import Item from "../BasketItem/Item"
+import Form from "../Form/Form"
 
 const Basket: FC = () => {
     return (<BasketWrapper>
@@ -26,7 +27,10 @@ const Basket: FC = () => {
                     </Result>
                     <Promocode placeholder="промокод" />
                     <Footer>
-                        <Button>Заказать</Button>
+                        <Buy>
+                            Заказать
+                            <Form />
+                        </Buy>
                     </Footer>
                 </Container>
         }

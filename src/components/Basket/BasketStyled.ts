@@ -45,3 +45,10 @@ export const EmptyBasket = styled.div`
     align-items: center;
     justify-content: center;
 `
+
+export const Buy = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
