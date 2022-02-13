@@ -4,7 +4,7 @@ import { BasketWrapper, Container, Footer, Header, Icon, Items, Promocode, Resul
 import { observer } from "mobx-react-lite"
 import basketStore from "../../stores/basketStore"
 import { FC } from "react"
-import Item from "./Item/Item"
+import Item from "../BasketItem/Item"
 
 const Basket: FC = () => {
     return (<BasketWrapper>
