@@ -1,5 +1,5 @@
-import { Field as FormikField, Form as FormikForm } from "formik";
-import styled from "styled-components";
+import { Field as FormikField, Form as FormikForm } from "formik"
+import styled from "styled-components"
 import bg from '../../img/intro/background.png'
 
 export const FormWrupper = styled.div`
@@ -11,9 +11,19 @@ export const FormWrupper = styled.div`
     height: 260px;
     width: 310px;
     color: white;
+    z-index: 11;
 `
 export const Title = styled.h4`
     
+`
+
+export const GB = styled.div`
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 `
 
 export const Field = styled(FormikField)`
@@ -34,4 +44,13 @@ export const Container = styled.div`
     height: 100%;
     width: 90%;
     margin: 0px auto;
+`
+
+export const Bg = styled.div`
+    position: fixed;
+    background-color: antiquewhite;
+    top: 0px;
+    right: 0px;
+    left:0px;
+    bottom: 0px;
 `

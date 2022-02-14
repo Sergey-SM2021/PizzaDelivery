@@ -8,8 +8,8 @@ class FormStore{
     makeVisible = () => {
         this.isVisible = true
     }
-    makeInvisible = () => {
-        this.isVisible = false  
+    makeInvisible(){
+        this.isVisible = false
     }
 }
 
