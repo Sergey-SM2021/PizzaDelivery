@@ -7,6 +7,7 @@ import { BasketWrapper, Buy, Container, EmptyBasket, Footer, Header, Icon, Items
 import basketStore from "../../stores/basketStore"
 import Item from "../BasketItem/Item"
 import Form from "../Form/Form"
+import FormStore from "../../stores/FormStore"
 
 const Basket: FC = () => {
     return (<BasketWrapper>
@@ -27,7 +28,7 @@ const Basket: FC = () => {
                     </Result>
                     <Promocode placeholder="промокод" />
                     <Footer>
-                        <Buy>
+                        <Buy onClick={()=>{FormStore.makeVisible()}}>
                             Заказать
                             <Form />
                         </Buy>

@@ -1,6 +1,8 @@
 import { Button } from "../ui/common"
 import { Container, Field, Form, FormWrupper, Title } from "./FormStyled"
 import { Formik } from 'formik'
+import FormStore from "../../stores/FormStore"
+import { observer } from "mobx-react-lite"
 
 const MyForm = () => {
 
@@ -8,8 +10,8 @@ const MyForm = () => {
         alert(JSON.stringify(values))
     }
 
-    return (<FormWrupper>
-        <Formik 
+    return (<>{FormStore.isVisible ? <FormWrupper>
+        <Formik
             initialValues={{ name: "", phone: "", address: "" }}
             onSubmit={HandlerSubmit}
         >{() => (
@@ -24,7 +26,7 @@ const MyForm = () => {
             </Form>
         )}
         </Formik>
-    </FormWrupper>)
+    </FormWrupper> : <></>}</>)
 }
 
-export default MyForm
+export default observer(MyForm)
