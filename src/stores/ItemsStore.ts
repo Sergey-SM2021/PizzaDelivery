@@ -1,4 +1,4 @@
-import { ItemsType } from '../models/model'
+import { ItemsInGrupType } from '../models/model'
 import Pizza from '../img/items/pizza1.png'
 import sauces from '../img/ui/sauces.png'
 import cheese from '../img/ui/cheese.png'
@@ -12,7 +12,7 @@ class ItemsStore {
         makeAutoObservable(this)
     }
 
-    items: ItemsType = [
+    items: ItemsInGrupType = [
         {
             id:"sdjhdsfh78748ghgf894894jiok",
             name: "Пицца",

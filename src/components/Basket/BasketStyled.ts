@@ -26,16 +26,12 @@ export const Promocode = styled.input`
     
 `
 
-export const Icon = styled.img`
-
-`
-
-export const Container = styled.div`
+export const Body = styled.div`
     display: flex;
     flex-direction: column;
 `
 
-export const Footer = styled.div`
+export const BuyArea = styled.div`
     display: flex;
     justify-content: center;
 `

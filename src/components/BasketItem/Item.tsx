@@ -1,4 +1,5 @@
 import { FC } from "react"
+
 import { ItemWrapper, Price, Title } from "./ItemStyled"
 
 const Item:FC<{price:number,title:string}> = ({price,title}) => {

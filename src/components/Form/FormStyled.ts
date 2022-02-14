@@ -17,7 +17,7 @@ export const Title = styled.h4`
     
 `
 
-export const GB = styled.div`
+export const BackgroundLayer = styled.div`
     z-index: 1;
     position: fixed;
     top: 0px;

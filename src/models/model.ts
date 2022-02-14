@@ -18,4 +18,4 @@ interface IItemGrup {
     id: string,
 }
 
-export type ItemsType = Array<IItemGrup>
+export type ItemsInGrupType = Array<IItemGrup>
