@@ -7,7 +7,7 @@ import OfferStore from "../../../stores/OfferStore"
 import { Button, Container } from "../../ui/common"
 import basketStore from "../../../stores/basketStore"
 
-const Offer: FC = () => {
+export const Offer: FC = observer(() => {
     const ClickHandler = () => {
         basketStore.addPizza(OfferStore.Item)
     }
@@ -37,6 +37,4 @@ const Offer: FC = () => {
             <Img src={OfferStore.Item.img} />
         </Container>
     </OfferWrapper>)
-}
-
-export default observer(Offer)
+})

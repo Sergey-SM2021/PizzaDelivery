@@ -1,8 +1,8 @@
 import { makeAutoObservable } from "mobx"
 
-import cheese from '../img/ui/cheese.png'
-import tomato from '../img/ui/tomato.png'
-import meat from '../img/ui/meat.png'
+import cheese from '../img/ui/emojione_cheese-wedge.svg'
+import tomato from '../img/ui/emojione_tomato.svg'
+import meat from '../img/ui/twemoji_meat-on-bone.svg'
 import { IItem } from "../models/model"
 import pizza from '../img/intro/Pizza-bg-intro.png'
 

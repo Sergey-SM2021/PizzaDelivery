@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const BasketWrapper = styled.div`
-    position: fixed;
+    position: sticky;
     width: 230px;
-    right: 0px;
     top: 100px;
+    margin-left: auto;
 `
 
 export const Header = styled.div`

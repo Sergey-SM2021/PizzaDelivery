@@ -1,14 +1,14 @@
 import { observer } from "mobx-react-lite"
 import { FC } from "react"
 
-import { BasketWrapper, Buy, Body, EmptyBasket, Header, Items, Promocode, Result, BuyArea } from "./BasketStyled"
+import { BasketWrapper, Buy, Body, EmptyBasket, Header, Items, Promocode, Result, BuyArea } from "./Basket.style"
 import basketStore from "../../stores/basketStore"
 import Item from "../BasketItem/Item"
-import Form from "../Form/Form"
+import {MyForm} from "../Form/Form"
 import FormStore from "../../stores/FormStore"
 import Status from "./Status/Status"
 
-const Basket: FC = () => {
+export const Basket: FC = observer(() => {
     const HandlerBuyClick = () => {
         FormStore.makeVisible()
     }
@@ -33,12 +33,10 @@ const Basket: FC = () => {
                     <BuyArea>
                         <Buy onClick={HandlerBuyClick}>
                             Заказать
-                            <Form />
+                            <MyForm />
                         </Buy>
                     </BuyArea>
                 </Body>
         }
     </BasketWrapper>)
-}
-
-export default observer(Basket)
+})

@@ -1,9 +1,9 @@
 import { ItemsInGrupType } from '../models/model'
 import Pizza from '../img/items/pizza1.png'
-import sauces from '../img/ui/sauces.png'
-import cheese from '../img/ui/cheese.png'
-import tomato from '../img/ui/tomato.png'
-import meat from '../img/ui/meat.png'
+import sauces from '../img/ui/Frame-2.svg'
+import cheese from '../img/ui/emojione_cheese-wedge.svg'
+import tomato from '../img/ui/emojione_tomato.svg'
+import meat from '../img/ui/twemoji_meat-on-bone.svg'
 
 import { makeAutoObservable } from "mobx"
 

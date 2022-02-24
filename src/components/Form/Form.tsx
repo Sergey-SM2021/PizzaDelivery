@@ -6,7 +6,7 @@ import { Formik } from 'formik'
 import { observer } from "mobx-react-lite"
 import { SyntheticEvent } from "react"
 
-const MyForm = () => {
+export const MyForm = observer(() => {
     const HandlerBLClick = (e: SyntheticEvent) => {
         e.stopPropagation()
         FormStore.makeInvisible()
@@ -38,6 +38,4 @@ const MyForm = () => {
         </>
             : <></>}
     </>)
-}
-
-export default observer(MyForm)
+})

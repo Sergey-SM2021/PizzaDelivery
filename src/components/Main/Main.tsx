@@ -4,7 +4,7 @@ import Item from "../Item/Item"
 import { Container } from "../ui/common"
 import ItemsStore from "../../stores/ItemsStore"
 import { MainItems, MainWrapper, Title } from "./MainStyled"
-import Basket from "../Basket/Basket"
+import {Basket} from "../Basket/Basket"
 
 const Main: FC = () => {
     return (<MainWrapper>
