@@ -17,6 +17,9 @@ export const Nav = styled.div`
     align-items:center;
     display:flex;
     justify-content: space-between;
+    @media(max-width: 700px){
+        content:"---"
+    }
 `
 
 export const NavItem = styled.div`

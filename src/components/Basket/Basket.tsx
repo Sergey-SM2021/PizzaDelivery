@@ -7,6 +7,7 @@ import Item from "../BasketItem/Item"
 import {MyForm} from "../Form/Form"
 import FormStore from "../../stores/FormStore"
 import Status from "./Status/Status"
+import { Button } from "../ui/common"
 
 export const Basket: FC = observer(() => {
     const HandlerBuyClick = () => {
@@ -22,7 +23,7 @@ export const Basket: FC = observer(() => {
                 <Body>
                     <Items>
                         {
-                            basketStore.items.map(item => <Item price={item.price} title={item.title} />)
+                            basketStore.items.map(item => <Item {...item} />)
                         }
                     </Items>
                     <Result>
@@ -32,7 +33,7 @@ export const Basket: FC = observer(() => {
                     <Promocode placeholder="промокод" />
                     <BuyArea>
                         <Buy onClick={HandlerBuyClick}>
-                            Заказать
+                            <Button>Заказать</Button>
                             <MyForm />
                         </Buy>
                     </BuyArea>

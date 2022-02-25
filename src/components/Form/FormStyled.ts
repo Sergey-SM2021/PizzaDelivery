@@ -3,27 +3,31 @@ import styled from "styled-components"
 import bg from '../../img/intro/background.png'
 
 export const FormWrupper = styled.div`
-    position: absolute;
-    top: -110px;
-    left: -400px;
+    z-index: 11;
+    position: relative;
     background-image: url(${bg});
     background-size: cover;
     height: 260px;
     width: 310px;
     color: white;
-    z-index: 11;
 `
+
 export const Title = styled.h4`
     
 `
 
-export const BackgroundLayer = styled.div`
+export const Popup = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
 `
 
 export const Field = styled(FormikField)`
@@ -52,5 +56,13 @@ export const Bg = styled.div`
     top: 0px;
     right: 0px;
     left:0px;
+    bottom: 0px;
+`
+
+export const BackgroundLayer = styled.div`
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     bottom: 0px;
 `

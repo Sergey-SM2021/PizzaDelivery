@@ -11,6 +11,10 @@ class FormStore{
     makeInvisible(){
         this.isVisible = false
     }
+    send(values:any){
+        alert(JSON.stringify(values))
+        this.makeInvisible()
+    }
 }
 
 export default new FormStore()

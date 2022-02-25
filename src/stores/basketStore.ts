@@ -14,6 +14,12 @@ class BasketStore {
     addPizza = (pizza:IItem) => {
         this.items.push(pizza)
     }
+    clear = () => {
+        this.items = []
+    }
+    delete = (id:string) => {
+        this.items = this.items.filter(el => el.id !== id)
+    }
 }
 
 export default new BasketStore()
