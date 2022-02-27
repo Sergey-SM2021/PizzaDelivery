@@ -69,10 +69,6 @@ export const Price = styled.div`
     font-size: 30px;
 `
 
-export const BTN = styled(Button)`
-    margin: 0px;
-`
-
 export const Pizza = styled.div`
     position: absolute;
     top: 70px;
