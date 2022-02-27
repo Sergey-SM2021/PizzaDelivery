@@ -1,103 +1,94 @@
 import styled from 'styled-components'
+import { Button } from '../../ui/common'
 
-import bg from "../../../img/intro/background.png"
-
-export const OfferWrapper = styled.div`
-    padding-top: 21px;
-    background-size: cover;
+export const IntroContent = styled.div`
     position: relative;
-    color: #F3F3F3;
-    background:url(${bg});
-    width: 100%;
-    display:flex;
-    height:100vh;
-    align-items:center;
-`
-
-export const StructureWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-`
-
-export const ContentInner = styled.div`
-    width: 400px;
-    position: relative;
-    flex-direction: column;
-    @media(max-width: 920px){
-        z-index: 2;
+    right: -600px;
+    width: 50%;
+    @media(max-width: 1050px){
+        right: -400px;
+        width: 50%;
+    }
+    @media(max-width: 784px){
+        right: -330px;
+    }
+    @media(max-width: 724px){
+        right: -300px;
+    }
+    @media(max-width: 700px){
+        right: -260px;
+    }
+    @media(max-width: 585px){
+        p{
+            font-size:20px;
+        }
+        span{
+            font-size:15px;
+        }
+        right: -280px;
     }
 `
 
-export const Content = styled.div`
+export const IntroWrapper = styled.div`
+    position: relative;
+    box-sizing: border-box;
+    padding: 80px 0px 30px 0px;
+    min-height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    background: url('/background.png') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    @media(max-width: 767px){
+        padding: 55px 0px 30px 0px;
+    }
+`
+
+export const DishDay = styled.span`
+    background-color: #BE1931;
+`
+
+export const Title = styled.div`
+    font-weight: 500;
+    font-size: 40px;
+    @media(max-width: 585px){
+        font-size: 24px;
+    }
 `
 
 export const Description = styled.p`
-    margin: 5px 0px;
-    width:100%;
-        @media(max-width: 1000px){
-            width: 400px;
-        }
-        @media(max-width: 920px){
-            margin: 0px;
-    }
+    
 `
 
-export const Img = styled.img`
-    height: 600px;  
-    left: 0px;
-    top: 100px;
-    position:absolute;
-    @media(max-width: 1000px){
-        height: 500px;
-        top: 120px;
-    }
-    @media(max-width: 920px){
-        z-index: 1;
-    }
-`
-
-export const Container = styled.div`
-    height:100%;
-    width: 80%;
-    margin: 0px auto;
-`
-
-export const DishInfo = styled.div`
-    height:45px;
-    align-items:center;
-    display:flex;
-    color: white;
+export const ByDish = styled.div`
+    display: flex;
     justify-content: space-between;
-`
-
-export const Title = styled.h1`
-    width: 100%;
-    position: relative;
-    @media(max-width: 920px){
-        margin: 0px;
-    }
+    align-items: center;
 `
 
 export const Price = styled.div`
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 30px;
 `
 
-export const Note = styled.div`
+export const BTN = styled(Button)`
     margin: 0px;
+`
+
+export const Pizza = styled.div`
     position: absolute;
-    top: -20px;
-    font-size: 20px;
-    background: #BE1931;
-    height: 30px;
-    width: 160px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    @media(max-width: 920px){
-        top: -20px;
+    top: 70px;
+    img{
+        width:500px;
+    }
+    @media(max-width:1050px){
+        top: 130px;
+        img{
+            width:400px;
+        }
+    }
+    @media(max-width:725px){
+        top: 200px;
+        img{
+            width:320px;
+        }
     }
 `

@@ -1,23 +1,28 @@
-import { FC } from "react"
-
-import logo from '../../../img/intro/Logo.png'
+import { FC, useState } from "react"
 import { Container } from "../../ui/common"
-import { HeaderWrapper, Logo, Nav, NavItem, PromoCode } from "./HeaderStyled"
+import { Burger, HeaderInner, HeaderWrapper, List, Logo, Menu } from "./HeaderStyled"
 
-const Header:FC = () => {
+export const Header: FC = () => {
+    const [isOpen, setVisability] = useState<boolean>(false)
+    const HandleBurgerClick = () => {
+        setVisability(!isOpen)
+    }
     return (<HeaderWrapper>
         <Container>
-            <Nav>
-                <Logo src={logo}/>
-                <Nav>
-                    <NavItem>О компании</NavItem>
-                    <NavItem>Наш ресторан</NavItem>
-                    <NavItem>Акции</NavItem>
-                </Nav>
-                <PromoCode placeholder="     ПРОМОКОД"/>
-            </Nav>
+            <HeaderInner>
+                <Logo><img src="/Logo.png" alt="Logo" /></Logo>
+                <Burger open={isOpen} onClick={HandleBurgerClick}>
+                    <span></span>
+                </Burger>
+                <Menu open={isOpen}>
+                    <List>
+                        <li>О компании</li>
+                        <li>Наш ресторан</li>
+                        <li>Акции</li>
+                        <li><input type="text" placeholder="ПРОМОКОД" /></li>
+                    </List>
+                </Menu>
+            </HeaderInner>
         </Container>
     </HeaderWrapper>)
 }
-
-export default Header
