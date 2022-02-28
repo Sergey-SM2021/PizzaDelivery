@@ -1,7 +1,7 @@
 import { FC } from "react"
 
 import { Delete, ItemWrapper, Price, Title } from "./Item.style"
-import Icon from '../../img/ui/Group 133.svg'
+import Icon from '../../assets/Icons/cancel-icon.svg'
 import basketStore from "../../stores/basketStore"
 import {IItem} from '../../models/model'
 
