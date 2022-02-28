@@ -1,10 +1,10 @@
 import { makeAutoObservable } from "mobx"
 
-import cheese from '../img/ui/emojione_cheese-wedge.svg'
-import tomato from '../img/ui/emojione_tomato.svg'
-import meat from '../img/ui/twemoji_meat-on-bone.svg'
+import cheese from '../assets/Icons/emojione_cheese-wedge.svg'
+import tomato from '../assets/Icons/emojione_tomato.svg'
+import meat from '../assets/Icons/meat-icon.svg'
 import { IItem } from "../models/model"
-import pizza from '../img/intro/Pizza-bg-intro.png'
+import pizza from '../assets/img/intro/Pizza-bg-intro.png'
 
 class OfferStore {
     constructor() {

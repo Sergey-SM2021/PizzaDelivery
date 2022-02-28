@@ -1,9 +1,9 @@
 import { ItemsInGrupType } from '../models/model'
-import Pizza from '../img/items/pizza1.png'
-import sauces from '../img/ui/Frame-2.svg'
-import cheese from '../img/ui/emojione_cheese-wedge.svg'
-import tomato from '../img/ui/emojione_tomato.svg'
-import meat from '../img/ui/twemoji_meat-on-bone.svg'
+import Pizza from '../assets/img/items/pizza1.png'
+import sauces from '../assets/Icons/decerts-icon.svg'
+import cheese from '../assets/Icons/emojione_cheese-wedge.svg'
+import tomato from '../assets/Icons/emojione_tomato.svg'
+import meat from '../assets/Icons/meat-icon.svg'
 
 import { makeAutoObservable } from "mobx"
 

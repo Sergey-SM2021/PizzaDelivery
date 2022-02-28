@@ -1,27 +1,20 @@
-import { FC, useState } from "react"
+import { FC } from "react"
 import { Container } from "../../ui/common"
-import { Burger, HeaderInner, HeaderWrapper, List, Logo, Menu } from "./HeaderStyled"
-
+import { HeaderInner, HeaderWrapper, MenuList, MenuListItem } from "./HeaderStyled"
+import {StyledInput} from "../../general/PromoInput";
+import { ReactComponent as Logo } from "../../../assets/Icons/logo.svg"
 export const Header: FC = () => {
-    const [isOpen, setVisability] = useState<boolean>(false)
-    const HandleBurgerClick = () => {
-        setVisability(!isOpen)
-    }
+
     return (<HeaderWrapper>
         <Container>
             <HeaderInner>
-                <Logo><img src="/Logo.png" alt="Logo" /></Logo>
-                <Burger open={isOpen} onClick={HandleBurgerClick}>
-                    <span></span>
-                </Burger>
-                <Menu open={isOpen}>
-                    <List>
-                        <li>О компании</li>
-                        <li>Наш ресторан</li>
-                        <li>Акции</li>
-                        <li><input type="text" placeholder="ПРОМОКОД" /></li>
-                    </List>
-                </Menu>
+                <Logo/>
+                 <MenuList>
+                        <MenuListItem>О компании</MenuListItem>
+                        <MenuListItem>Наш ресторан</MenuListItem>
+                        <MenuListItem>Акции</MenuListItem>
+                    </MenuList>
+                <StyledInput placeholder={"Промокод"}/>
             </HeaderInner>
         </Container>
     </HeaderWrapper>)

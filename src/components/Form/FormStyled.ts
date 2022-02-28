@@ -1,6 +1,6 @@
 import { Field as FormikField, Form as FormikForm } from "formik"
 import styled from "styled-components"
-import bg from '../../img/intro/background.png'
+import bg from '../../assets/img/intro/background.png'
 
 export const FormWrupper = styled.div`
     z-index: 11;

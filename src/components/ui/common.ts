@@ -50,7 +50,7 @@ export const Button = styled.button`
 `
 
 export const Container = styled.div`
-    width: 80%;
-    margin-left: 20px;
-    padding: 0px 20px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 240px;
 `
