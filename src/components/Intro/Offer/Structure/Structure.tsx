@@ -1,13 +1,8 @@
 import { FC } from "react"
-import { StructureItem, Container } from "./StructureStyled"
+import { Item } from "./Structure.style"
 
-const Structure:FC<{img:string,structure:Array<string>}> = ({img, structure}) => {
-    return (
-        <Container>
-            <img src={img} />
-            <StructureItem>{structure.join(", ")}</StructureItem>
-        </Container>
-    )
+export const Structure:FC<{img:string,structure:string}> = ({img,structure}) => {
+    return(<ul>
+        <Item><img src={img}/>{structure}</Item>
+    </ul>)
 }
-
-export default Structure

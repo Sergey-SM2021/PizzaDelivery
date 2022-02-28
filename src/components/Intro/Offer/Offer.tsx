@@ -1,47 +1,29 @@
+import { FC } from "react"
 
-import { observer } from "mobx-react-lite"
-import Pizza from '../../../img/Pizza-bg-intro.png'
-import { Content, DayDishInfo, DayDishName, DishDayDescription, DishDayPicture, DayDishWrapper } from "./OfferStyled"
-import Structure from './Structure/Structure'
-import OfferStore from "../../../mobX/OfferStore"
+import { Button, Container } from "../../ui/common"
+import { ByDish, Description, DishDay, IntroContent, IntroWrapper, Price, Title, Pizza } from "./OfferStyled"
+import OfferStore from "../../../stores/OfferStore"
+import basketStore from "../../../stores/basketStore"
+import { Structure } from "./Structure/Structure"
 
-// const Offer: FC = () => {
-//     return (<Main>
-//         <Content>
-//             <H1>{OfferStore.title}</H1>
-//             <P>{
-//                 OfferStore.description
-//             }</P>
-//             {OfferStore.structure.map(el => <Structure img={el.img} structure={el.structure} />)}
-//             <Flex>
-//                 <button>В корзину</button>
-//                 <div>{OfferStore.price}</div>
-//             </Flex>
-//         </Content>
-//         <Img src={Pizza} />
-//     </Main>)
-// }
-
-export const Offer = observer(()=>{
-    return (
-        <DayDishWrapper>
-            <Content>
-                <DayDishName>{OfferStore.title}</DayDishName>
-                <DishDayDescription>{
-                    OfferStore.description
-                }</DishDayDescription>
-                {OfferStore.structure.map(el => <Structure img={el.img} structure={el.structure} />)}
-                <DayDishInfo>
-                    <button>В корзину</button>
-                    <span>{OfferStore.price}</span>
-                </DayDishInfo>
-            </Content>
-            <DishDayPicture src={Pizza} />
-        </DayDishWrapper>
-
-    )
-})
-
-
-
-export default Offer;
+export const Offer: FC = () => {
+    const handleBuy = () => {
+        basketStore.addPizza(OfferStore.Item)
+    }
+    return (<IntroWrapper>
+        <Container>
+                <IntroContent>
+                    <DishDay >Блюдо дня</DishDay>
+                    <Title>{OfferStore.Item.title}</Title>
+                    <Description>{OfferStore.Item.description}</Description>
+                        {OfferStore.Item.structure?.map(el => <Structure img={el.img} structure={el.structure.join(", ")}/>)}
+                    <ByDish>
+                        <Button onClick={handleBuy}>В корзину</Button><Price>{OfferStore.Item.price}$</Price>
+                    </ByDish>
+                </IntroContent>
+        </Container>
+        <Pizza>
+            <img src={OfferStore.Item.img} alt="" />
+        </Pizza>
+    </IntroWrapper>)
+}

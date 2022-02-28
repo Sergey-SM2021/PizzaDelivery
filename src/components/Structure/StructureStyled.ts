@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const StructureWrapper = styled.div`
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -8,6 +8,10 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    margin: 15px 0px;
+    @media(max-width: 920px){
+        margin: 0px;
+    }
 `
 
 export const StructureItem = styled.div`

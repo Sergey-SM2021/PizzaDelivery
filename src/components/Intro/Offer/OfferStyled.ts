@@ -1,59 +1,90 @@
 import styled from 'styled-components'
-import bg from "../../../img/background.png"
+import { Button } from '../../ui/common'
 
-export const Content = styled.div`
-    width: 410px;
+export const IntroContent = styled.div`
     position: relative;
-    left: 268px;
-    @media(max-width:1000px){
-        left: 180px;
+    right: -600px;
+    width: 50%;
+    @media(max-width: 1050px){
+        right: -400px;
+        width: 50%;
     }
-`
-
-export const DishDayDescription = styled.p`
-    width:100%;
-        @media(max-width: 1000px){
-            width: 400px;
+    @media(max-width: 784px){
+        right: -330px;
+    }
+    @media(max-width: 724px){
+        right: -300px;
+    }
+    @media(max-width: 700px){
+        right: -260px;
+    }
+    @media(max-width: 585px){
+        p{
+            font-size:20px;
         }
-`
-
-export const DishDayPicture = styled.img`
-    height: 600px;  
-    left: 0px;
-    top: 100px;
-    position:absolute;
-    @media(max-width: 1000px){
-        height: 500px;
-        top: 120px;
+        span{
+            font-size:15px;
+        }
+        right: -280px;
     }
 `
 
-export const DayDishWrapper = styled.div`
-    background-size: cover;
+export const IntroWrapper = styled.div`
     position: relative;
-    color: #F3F3F3;
-    background:url(${bg});
+    box-sizing: border-box;
+    padding: 80px 0px 30px 0px;
+    min-height: 100vh;
     width: 100%;
-    display:flex;
-    justify-content: center;
-    height:100vh;
-    align-items:center;
+    background: url('/background.png') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    @media(max-width: 767px){
+        padding: 55px 0px 30px 0px;
+    }
 `
 
-export const Container = styled.div`
-    height:100%;
-    width: 80%;
-    margin: 0px auto;
+export const DishDay = styled.span`
+    background-color: #BE1931;
 `
 
-export const DayDishInfo = styled.div`
-    height:100%;
-    align-items:center;
-    display:flex;
-    color: white;
-    justify-content: space-around;
+export const Title = styled.div`
+    font-weight: 500;
+    font-size: 40px;
+    @media(max-width: 585px){
+        font-size: 24px;
+    }
 `
 
-export const DayDishName = styled.h1`
-    width: 100%;
+export const Description = styled.p`
+    
+`
+
+export const ByDish = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const Price = styled.div`
+    font-size: 30px;
+`
+
+export const Pizza = styled.div`
+    position: absolute;
+    top: 70px;
+    img{
+        width:500px;
+    }
+    @media(max-width:1050px){
+        top: 130px;
+        img{
+            width:400px;
+        }
+    }
+    @media(max-width:725px){
+        top: 200px;
+        img{
+            width:320px;
+        }
+    }
 `
