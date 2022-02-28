@@ -8,6 +8,7 @@ import
     IntroWrapper,
     DayDishPrice,
     DishDayTitle,
+        DishDayInfoWrapper,
     DayDishPreview } from "./OfferStyled"
 import OfferStore from "../../../stores/OfferStore"
 import basketStore from "../../../stores/basketStore"
@@ -21,6 +22,7 @@ export const Offer = observer(()=> {
     return (<IntroWrapper>
         <Container>
             <IntroContent>
+                <DishDayInfoWrapper>
                 <DishDayTicket >Блюдо дня</DishDayTicket>
                 <DishDayTitle>{OfferStore.Item.title}</DishDayTitle>
                 <DishDayDescription>{OfferStore.Item.description}</DishDayDescription>
@@ -30,6 +32,7 @@ export const Offer = observer(()=> {
                     <Button onClick={handleBuy}>В корзину</Button>
                     <DayDishPrice>{OfferStore.Item.price}$</DayDishPrice>
                 </ActionWrapper>
+                </DishDayInfoWrapper>
             </IntroContent>
         </Container>
         <DayDishPreview>

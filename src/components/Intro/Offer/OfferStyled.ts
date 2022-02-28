@@ -1,5 +1,9 @@
 import styled from 'styled-components'
-import { Button } from '../../ui/common'
+import {keyframes} from "styled-components";
+import { fadeInLeft, fadeInUp } from 'react-animations'
+
+const fadeLeft = keyframes`${fadeInLeft}`;
+const fadeUp = keyframes`${fadeInUp}`;
 
 export const IntroContent = styled.div`
     position: relative;
@@ -40,8 +44,9 @@ export const IntroWrapper = styled.div`
     background: url('/background.png') no-repeat center;
     background-size: cover;
     color: #fff;
-  
 `
+
+export const DishDayInfoWrapper=styled.div`animation: 1s ${fadeUp}`
 
 export const DishDayTicket = styled.span`
     background-color: #BE1931;
@@ -82,6 +87,7 @@ export const DayDishPrice = styled.span`
 `
 
 export const DayDishPreview = styled.div`
+    animation: 1s ${fadeLeft};;
     position: absolute;
     top: 150px;
     width: 750px;
