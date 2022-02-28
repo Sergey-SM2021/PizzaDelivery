@@ -83,7 +83,10 @@ export const DayDishPrice = styled.span`
 
 export const DayDishPreview = styled.div`
     position: absolute;
-    top: 205px;
-    width: 800px;
+    top: 150px;
+    width: 750px;
+    img{
+      width: 100%;
+    }
   
 `

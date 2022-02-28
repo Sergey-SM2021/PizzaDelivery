@@ -1,10 +1,19 @@
 import styled from "styled-components"
 
-export const Item = styled.li`
-    list-style: none;
+
+export const IncredientsWrapper = styled.div`
+  display: block;
+
+`
+
+export const Item = styled.div`
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  
+     &:first-child{
+      margin-top: 30px;
+     }
 `
 
 export const IngredientsSpan = styled.span`

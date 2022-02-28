@@ -11,7 +11,7 @@ import
     DayDishPreview } from "./OfferStyled"
 import OfferStore from "../../../stores/OfferStore"
 import basketStore from "../../../stores/basketStore"
-import { Structure } from "./Structure/Structure"
+import { DishIngredients } from "./DishIngredients/DishIngredients"
 
 
 export const Offer = observer(()=> {
@@ -25,7 +25,7 @@ export const Offer = observer(()=> {
                 <DishDayTitle>{OfferStore.Item.title}</DishDayTitle>
                 <DishDayDescription>{OfferStore.Item.description}</DishDayDescription>
                 {OfferStore.Item.structure?.map(el =>
-                    <Structure img={el.img} structure={el.structure.join(", ")}/>)}
+                    <DishIngredients img={el.img} ingredients={el.structure.join(", ")}/>)}
                 <ActionWrapper>
                     <Button onClick={handleBuy}>В корзину</Button>
                     <DayDishPrice>{OfferStore.Item.price}$</DayDishPrice>
