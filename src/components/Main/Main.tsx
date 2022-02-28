@@ -9,20 +9,20 @@ import {Basket} from "../Basket/Basket"
 const Main: FC = () => {
     return (<MainWrapper>
         <Basket />
-        <Container>
+            <div>
             {
                 ItemsStore.items.map(
-                    grup => (<>
-                        <Title key={grup.id}>{grup.name}</Title>
+                    group => (<>
+                        <Title key={group.id}>{group.name}</Title>
                         <MainItems>
                             {
-                                grup.Items.map(item => <Item {...item}/>)
+                                group.Items.map(item => <Item {...item}/>)
                             }
                         </MainItems>
                     </>)
                 )
             }
-        </Container>
+            </div>
     </MainWrapper>
     )
 }

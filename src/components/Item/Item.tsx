@@ -7,7 +7,7 @@ import { Button } from "../ui/common"
 import basketStore from "../../stores/basketStore"
 
 const Item:FC<IItem> = ({description,price,structure,title,img,id}) => {
-    const ClickHandler = (e:SyntheticEvent) => {
+    const clickHandler = (e:SyntheticEvent) => {
         basketStore.addPizza({description,price,structure,title,img,id})
     }
 
@@ -18,7 +18,7 @@ const Item:FC<IItem> = ({description,price,structure,title,img,id}) => {
         {
             structure?.map(str => <Structure structure={str.structure} img={str.img} />)
         }
-        <Button onClick={ClickHandler}>{price}</Button>
+        <Button onClick={()=> clickHandler}>{price}</Button>
     </ItemWrapper>)
 }
 

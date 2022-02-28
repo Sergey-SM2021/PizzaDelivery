@@ -13,7 +13,7 @@ class OfferStore {
     Item: IItem = {
         img:pizza,
         id:"aaasjdkjfkj",
-        price: 700,
+        price: 30,
         title: "Пепперони",
         description: "Бессмертная итальянская классика с новым взглядом на рецептуру. Из каменной печи уже в России.",
         structure: [

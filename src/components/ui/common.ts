@@ -7,6 +7,17 @@ export default createGlobalStyle`
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
     }
+    html{
+      height: 100%;
+    }
+    
+    body{
+      height: 100%;
+    }
+    
+    #root{
+      height: 100%;
+    }
     
     h3{
         font-size: 31px;
@@ -36,21 +47,21 @@ export default createGlobalStyle`
 
 export const Button = styled.button`
     background: #F4900C;
-    width: 165px;
-    margin-top: 20px;
     font-weight: 600;
     font-size: large;
-    height: 34px;
+    padding: 15px 76px;
+    cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     transition: 0.9s;  
-    &:Hover{
+    &:hover{
         box-shadow: 17px 4px 50px #000; 
     }
 `
 
 export const Container = styled.div`
     width: 100%;
+     height: 100%;
     padding-left: 40px;
     padding-right: 240px;
 `

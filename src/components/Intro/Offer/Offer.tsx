@@ -1,7 +1,15 @@
 import { FC } from "react"
 
 import { Button, Container } from "../../ui/common"
-import { ByDish, Description, DishDay, IntroContent, IntroWrapper, Price, Title, Pizza } from "./OfferStyled"
+import
+    { ActionWrapper,
+    DishDayDescription,
+    DishDayTicket,
+    IntroContent,
+    IntroWrapper,
+    DayDishPrice,
+    DishDayTitle,
+    DayDishPreview } from "./OfferStyled"
 import OfferStore from "../../../stores/OfferStore"
 import basketStore from "../../../stores/basketStore"
 import { Structure } from "./Structure/Structure"
@@ -13,17 +21,19 @@ export const Offer: FC = () => {
     return (<IntroWrapper>
         <Container>
                 <IntroContent>
-                    <DishDay >Блюдо дня</DishDay>
-                    <Title>{OfferStore.Item.title}</Title>
-                    <Description>{OfferStore.Item.description}</Description>
-                        {OfferStore.Item.structure?.map(el => <Structure img={el.img} structure={el.structure.join(", ")}/>)}
-                    <ByDish>
-                        <Button onClick={handleBuy}>В корзину</Button><Price>{OfferStore.Item.price}$</Price>
-                    </ByDish>
+                    <DishDayTicket >Блюдо дня</DishDayTicket>
+                    <DishDayTitle>{OfferStore.Item.title}</DishDayTitle>
+                    <DishDayDescription>{OfferStore.Item.description}</DishDayDescription>
+                        {OfferStore.Item.structure?.map(el =>
+                            <Structure img={el.img} structure={el.structure.join(", ")}/>)}
+                    <ActionWrapper>
+                        <Button onClick={handleBuy}>В корзину</Button>
+                        <DayDishPrice>{OfferStore.Item.price}$</DayDishPrice>
+                    </ActionWrapper>
                 </IntroContent>
         </Container>
-        <Pizza>
+        <DayDishPreview>
             <img src={OfferStore.Item.img} alt="" />
-        </Pizza>
+        </DayDishPreview>
     </IntroWrapper>)
 }
