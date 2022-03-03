@@ -2,11 +2,9 @@ import styled from "styled-components"
 
 export const ItemWrapper = styled.div`
     width: 310px;
-    @media(max-width: 1100px){
-        width: 285px;
-    }
-    @media(max-width: 1000px){
-        width: 300px;
+    margin: 0px 0px 50px 0px ;
+    &:last-child{
+        margin: 0px;
     }
 `
 
@@ -16,7 +14,7 @@ export const ItemPhoto = styled.img`
 
 export const ItemTitle = styled.h3`
     font-weight: 600;
-    margin: 10px 0px;
+    margin: 23px 0px;
 `
 
 export const ItemDescription = styled.p`
@@ -24,4 +22,5 @@ export const ItemDescription = styled.p`
     color: rgba(0,0,0,0.65);
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 25px ;
 `

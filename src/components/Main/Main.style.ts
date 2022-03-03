@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const MainWrapper = styled.div`
-    padding-top: 100px;
+    padding-top: 140px;
 `
 
 export const MainItems = styled.div`
@@ -14,10 +14,10 @@ export const MainItems = styled.div`
 export const GroupWrapper = styled.div`
     width: 100%;
     height: 100%;
-    margin: 0px 0px 130px 0px;
+    margin: 0px 0px 100px 0px;
 `
 
 export const MainTitle = styled.h2`
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 `

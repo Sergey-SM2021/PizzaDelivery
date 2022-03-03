@@ -12,5 +12,5 @@ export const StructureItem = styled.div<{isOfer? : boolean}>`
     font-weight: ${props => props.isOfer?"500":"600"};
     font-size: ${props => props.isOfer?"22px":"20px"};
     width:440px;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 25px 10px;
 `

@@ -37,7 +37,7 @@ export const IntroWrapper = styled.div`
     position: relative;
     box-sizing: border-box;
     padding: 180px 0 30px 0;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
