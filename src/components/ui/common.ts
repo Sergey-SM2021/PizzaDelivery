@@ -49,19 +49,22 @@ export const Button = styled.button`
     background: #F4900C;
     font-weight: 600;
     font-size: large;
-    padding: 15px 76px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     border: none;
     border-radius: 12px;
-    transition: 0.9s;  
+    transition: 0.9s;
     &:hover{
         box-shadow: 17px 4px 50px #000; 
     }
+    margin-top: 10px;
 `
 
 export const Container = styled.div`
     width: 100%;
-     height: 100%;
+    height: 100%;
     padding-left: 40px;
     padding-right: 240px;
+    box-sizing: border-box;
 `

@@ -16,7 +16,7 @@ const Item:FC<IItem> = ({description,price,structure,title,img,id}) => {
         <Name>{title}</Name>
         <Description>{description}</Description>
         <DishIngredients ingredients={structure}/>
-        <Button onClick={()=> clickHandler}>{price}</Button>
+        <Button onClick={clickHandler}>{price}</Button>
     </ItemWrapper>)
 }
 
