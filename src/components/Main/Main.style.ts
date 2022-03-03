@@ -11,6 +11,12 @@ export const MainItems = styled.div`
     grid-template: 1fr/ 1fr 1fr 1fr;
 `
 
+export const GroupWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 130px 0px;
+`
+
 export const MainTitle = styled.h2`
     margin-top: 30px;
     margin-bottom: 10px;

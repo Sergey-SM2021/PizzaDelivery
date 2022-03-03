@@ -17,3 +17,7 @@ export const Delete = styled.img`
     height: 17px;
     cursor: pointer;
 `
+
+export const ItemOrder = styled.div`
+    
+`

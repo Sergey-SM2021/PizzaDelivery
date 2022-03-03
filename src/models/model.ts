@@ -5,6 +5,7 @@ export interface IItem {
     structure?: Array<IStructure>,
     id:string,
     img:string,
+    order?:number
 }
 
 export interface IStructure {
