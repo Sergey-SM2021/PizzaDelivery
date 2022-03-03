@@ -6,7 +6,6 @@ export const MainWrapper = styled.div`
 
 export const MainItems = styled.div`
     row-gap: 24px;
-    justify-items: center;
     width: 95%;
     display: grid;
     grid-template: 1fr/ 1fr 1fr 1fr;

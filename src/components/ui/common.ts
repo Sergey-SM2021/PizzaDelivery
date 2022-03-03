@@ -61,7 +61,8 @@ export const Button = styled.button`
 
 export const Container = styled.div`
     width: 100%;
-     height: 100%;
+    height: 100%;
     padding-left: 40px;
     padding-right: 240px;
+    box-sizing: border-box;
 `
