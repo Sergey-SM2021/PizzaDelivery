@@ -7,7 +7,7 @@ export interface IItem {
     img:string,
 }
 
-interface IStructure {
+export interface IStructure {
     img: string,
     structure: Array<string>,
 }

@@ -1,7 +1,7 @@
 import { FC, SyntheticEvent } from "react"
 
 import { IItem } from "../../models/model"
-import Structure from "../Structure/Structure"
+import { DishIngredients } from "../DishIngredients/DishIngredients"
 import { Description, ItemWrapper, Name, Photo } from "./ItemStyled"
 import { Button } from "../ui/common"
 import basketStore from "../../stores/basketStore"
@@ -15,9 +15,7 @@ const Item:FC<IItem> = ({description,price,structure,title,img,id}) => {
         <Photo src={img} />
         <Name>{title}</Name>
         <Description>{description}</Description>
-        {
-            structure?.map(str => <Structure structure={str.structure} img={str.img} />)
-        }
+        <DishIngredients ingredients={structure}/>
         <Button onClick={()=> clickHandler}>{price}</Button>
     </ItemWrapper>)
 }
