@@ -10,15 +10,16 @@ export const ItemWrapper = styled.div`
     }
 `
 
-export const Photo = styled.img`
+export const ItemPhoto = styled.img`
     width: 100%;
 `
 
-export const Name = styled.h3`
-
+export const ItemTitle = styled.h3`
+    font-weight: 600;
+    margin: 10px 0px;
 `
 
-export const Description = styled.p`
+export const ItemDescription = styled.p`
     width: 100%;
     color: rgba(0,0,0,0.65);
     font-size: 20px;

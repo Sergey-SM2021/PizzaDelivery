@@ -1,12 +1,12 @@
 import { IStructure } from "../../models/model"
-import { StructureItem, StructureWrapper } from "./StructureStyled"
+import { StructureItem, StructureWrapper } from "./DishIngredients.style"
 
-type DishIngredientsType = {
+type TProps = {
     ingredients: Array<IStructure> | undefined,
     isOffer?:boolean
 }
 
-export const DishIngredients = ({ ingredients,isOffer }: DishIngredientsType) => {
+export const DishIngredients = ({ ingredients,isOffer }: TProps) => {
     return (<>{ingredients?.map(el =>
         <StructureWrapper>
             <img src={el.img} />

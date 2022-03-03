@@ -1,7 +1,8 @@
 import { observer } from "mobx-react-lite"
 import { FC } from "react"
 
-import { BasketWrapper, Buy, Body, EmptyBasket, Header, Items, Promocode, Result, BuyArea } from "./Basket.style"
+import { BasketWrapper, Buy, Body, EmptyBasket, 
+    Header, Items, Promocode, Result, BuyArea } from "./Basket.style"
 import basketStore from "../../stores/basketStore"
 import Item from "../BasketItem/Item"
 import {MyForm} from "../Form/Form"

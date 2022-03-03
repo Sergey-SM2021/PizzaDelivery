@@ -3,17 +3,17 @@ import { FC } from "react"
 import Item from "../Item/Item"
 import { Container } from "../ui/common"
 import ItemsStore from "../../stores/ItemsStore"
-import { MainItems, MainWrapper, Title } from "./MainStyled"
+import { MainItems, MainWrapper, MainTitle } from "./Main.style"
 import { Basket } from "../Basket/Basket"
 
-const Main: FC = () => {
+export const Main: FC = () => {
     return (<MainWrapper>
         <Container>
             <Basket />
                 {
                     ItemsStore.items.map(
                         group => (<>
-                            <Title key={group.id}>{group.name}</Title>
+                            <MainTitle key={group.id}>{group.name}</MainTitle>
                             <MainItems>
                                 {
                                     group.Items.map(item => <Item {...item} />)
@@ -26,5 +26,3 @@ const Main: FC = () => {
     </MainWrapper>
     )
 }
-
-export default Main

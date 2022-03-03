@@ -1,18 +1,20 @@
 import { FC } from "react"
 
-import { Delete, ItemWrapper, Price, Title } from "./Item.style"
+import { Delete, ItemWrapper, ItemPrice, ItemTitle } from "./Item.style"
 import Icon from '../../assets/Icons/cancel-icon.svg'
 import basketStore from "../../stores/basketStore"
-import {IItem} from '../../models/model'
+import { IItem } from '../../models/model'
 
-const Item:FC<IItem> = ({price,title,id}) => {
+const Item: FC<IItem> = ({ price, title, id }) => {
     const DeleteHandler = () => {
         basketStore.delete(id)
     }
 
-    return(<ItemWrapper>
-        <Title><Delete onClick={DeleteHandler} src={Icon}/>{title}</Title>
-        <Price>{price}</Price>
+    return (<ItemWrapper>
+        <ItemTitle>
+            <Delete onClick={DeleteHandler} src={Icon} />
+            {title}</ItemTitle>
+        <ItemPrice>{price}</ItemPrice>
     </ItemWrapper>)
 }
 

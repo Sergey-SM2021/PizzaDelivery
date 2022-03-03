@@ -5,14 +5,15 @@ export const ItemWrapper = styled.div`
     justify-content: space-between;
 `
 
-export const Title = styled.div`
+export const ItemTitle = styled.div`
     display: flex;
     align-items: center;
 `
 
-export const Price = styled.div`
+export const ItemPrice = styled.div`
     
 `
 export const Delete = styled.img`
     height: 17px;
+    cursor: pointer;
 `

@@ -46,7 +46,7 @@ export const IntroWrapper = styled.div`
     color: #fff;
 `
 
-export const DishDayInfoWrapper=styled.div`animation: 1s ${fadeUp}`
+export const DishDayInfoWrapper=styled.div`animation: 1s ${fadeUp};`
 
 export const DishDayTicket = styled.span`
     background-color: #BE1931;
@@ -55,7 +55,6 @@ export const DishDayTicket = styled.span`
     padding: 10px 6px;
     display: block;
     margin-bottom: 20px;
-  
 `
 
 export const DishDayTitle = styled.div`

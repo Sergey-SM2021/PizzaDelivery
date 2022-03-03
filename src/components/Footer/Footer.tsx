@@ -6,7 +6,7 @@ import inst from '../../assets/img/footer/inst.png'
 import { FooterContent, FooterWrapper, Icon, Icons } from "./FooterStyled"
 import { Container } from "../ui/common"
 
-const Footer: FC = () => {
+export const Footer: FC = () => {
     return (<FooterWrapper>
         <Container>
             <FooterContent>
@@ -20,5 +20,3 @@ const Footer: FC = () => {
         </Container>
     </FooterWrapper>)
 }
-
-export default Footer

@@ -1,10 +1,10 @@
-import { Button } from "../ui/common"
-import { Popup, Container, Field, Form, FormWrupper, Title, BackgroundLayer } from "./FormStyled"
-import FormStore from "../../stores/FormStore"
-
 import { Formik } from 'formik'
 import { observer } from "mobx-react-lite"
 import { SyntheticEvent } from "react"
+
+import { Button } from "../ui/common"
+import { Popup, Container, Field, Form, FormWrupper, Title, BackgroundLayer } from "./Form.style"
+import FormStore from "../../stores/FormStore"
 import basketStore from "../../stores/basketStore"
 
 export const MyForm = observer(() => {

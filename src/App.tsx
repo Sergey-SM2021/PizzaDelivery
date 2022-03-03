@@ -1,7 +1,7 @@
 import Intro from "./pages/Intro"
 import GlobalStyles from './components/ui/common'
-import Main from "./components/Main/Main"
-import Footer from "./components/Footer/Footer"
+import {Main} from "./components/Main/Main"
+import {Footer} from "./components/Footer/Footer"
 
 const App = () => {
   return (
