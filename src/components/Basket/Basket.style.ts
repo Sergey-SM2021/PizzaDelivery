@@ -23,7 +23,11 @@ export const Result = styled.div`
 `
 
 export const Promocode = styled.input`
-    margin: 10px 0px;
+    margin: 13px 0px;
+    height: 25px;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-indent:10px;
 `
 
 export const Body = styled.div`

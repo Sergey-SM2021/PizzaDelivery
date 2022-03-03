@@ -29,7 +29,7 @@ export const Basket: FC = observer(() => {
                     </Items>
                     <Result>
                         <div>Итог:</div>
-                        <div>{basketStore.price}</div>
+                        <div>{basketStore.price}$.</div>
                     </Result>
                     <Promocode placeholder="промокод" />
                     <BuyArea>
