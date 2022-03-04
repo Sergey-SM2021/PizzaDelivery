@@ -1,11 +1,18 @@
-import styled from "styled-components";
+import styled from "styled-components"
+
+export const BasketPosition = styled.div`
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+`
 
 export const BasketWrapper = styled.div`
     position: sticky;
     width: 230px;
     top: 100px;
-    margin-right: 10px;
-    margin-left: auto;
+    margin-right: 15px;
 `
 
 export const Header = styled.div`
