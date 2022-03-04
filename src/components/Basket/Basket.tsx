@@ -6,10 +6,10 @@ import {
     Header, Items, Promocode, Result, BuyArea, BasketInner
 } from "./Basket.style"
 import basketStore from "../../stores/basketStore"
-import Item from "../BasketItem/Item"
+import {Item} from "../BasketItem/Item"
 import { MyForm } from "../Form/Form"
 import FormStore from "../../stores/FormStore"
-import Status from "./Status/Status"
+import {Status} from "./Status/Status"
 import { Button } from "../ui/common"
 
 export const Basket: FC = observer(() => {

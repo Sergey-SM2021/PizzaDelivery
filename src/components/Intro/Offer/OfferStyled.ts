@@ -89,9 +89,8 @@ export const DayDishPreview = styled.div`
     animation: 1s ${fadeLeft};;
     position: absolute;
     top: 150px;
-    width: 750px;
+    width: 680px;
     img{
-      width: 100%;
+        width: 100%;
     }
-  
 `

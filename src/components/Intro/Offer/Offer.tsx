@@ -35,7 +35,7 @@ export const Offer = observer(()=> {
             </IntroContent>
         </Container>
         <DayDishPreview>
-            <img src={OfferStore.Item.img} alt="" />
+            <img src={OfferStore.Item.img} />
         </DayDishPreview>
     </IntroWrapper>)
 

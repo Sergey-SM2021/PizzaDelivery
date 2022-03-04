@@ -1,11 +1,12 @@
 import { FC } from "react"
+import { observer } from "mobx-react-lite"
 
 import { Delete, ItemWrapper, ItemPrice, ItemTitle, ItemOrder } from "./Item.style"
 import Icon from '../../assets/Icons/cancel-icon.svg'
 import basketStore from "../../stores/basketStore"
 import { IItem } from '../../models/model'
 
-const Item: FC<IItem> = ({ price, title, id, order }) => {
+export const Item: FC<IItem> = observer(({ price, title, id, order }) => {
     const DeleteHandler = () => {
         basketStore.delete(id)
     }
@@ -18,6 +19,4 @@ const Item: FC<IItem> = ({ price, title, id, order }) => {
         </ItemTitle>
         <ItemPrice>{price}$.</ItemPrice>
     </ItemWrapper>)
-}
-
-export default Item
+})
