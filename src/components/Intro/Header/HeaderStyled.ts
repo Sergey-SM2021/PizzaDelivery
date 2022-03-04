@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const HeaderWrapper = styled.div`
     display: flex;
-     justify-content: center;
+    justify-content: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background: #242424;
-   
+    z-index: 10;
 `
 
 export const HeaderInner = styled.div`

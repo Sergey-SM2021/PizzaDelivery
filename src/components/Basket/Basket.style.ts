@@ -4,6 +4,7 @@ export const BasketWrapper = styled.div`
     position: sticky;
     width: 230px;
     top: 100px;
+    margin-right: 10px;
     margin-left: auto;
 `
 

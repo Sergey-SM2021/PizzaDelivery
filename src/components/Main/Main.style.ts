@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const MainWrapper = styled.div`
     padding-top: 140px;
+    position: relative;
 `
 
 export const MainItems = styled.div`

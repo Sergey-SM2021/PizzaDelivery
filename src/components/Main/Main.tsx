@@ -8,8 +8,8 @@ import { Basket } from "../Basket/Basket"
 
 export const Main: FC = () => {
     return (<MainWrapper>
+        <Basket />
         <Container>
-            <Basket />
                 {
                     ItemsStore.items.map(
                         group => (<GroupWrapper>
