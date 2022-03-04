@@ -1,8 +1,12 @@
 import { Field as FormikField, Form as FormikForm } from "formik"
-import styled from "styled-components"
+import styled,{keyframes} from "styled-components"
 import bg from '../../assets/img/intro/background.png'
+import { fadeInDown as animation } from 'react-animations'
+
+const appear = keyframes`${animation}`
 
 export const FormWrupper = styled.div`
+    animation: 1s ${appear};
     z-index: 11;
     position: relative;
     background-image: url(${bg});

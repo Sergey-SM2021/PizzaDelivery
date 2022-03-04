@@ -3,7 +3,7 @@ import { FC } from "react"
 
 import {
     BasketWrapper, Buy, Body, EmptyBasket,
-    Header, Items, Promocode, Result, BuyArea, BasketPosition
+    Header, Items, Promocode, Result, BuyArea, BasketInner
 } from "./Basket.style"
 import basketStore from "../../stores/basketStore"
 import Item from "../BasketItem/Item"
@@ -17,8 +17,8 @@ export const Basket: FC = observer(() => {
         FormStore.makeVisible()
     }
 
-    return (<BasketPosition>
-        <BasketWrapper>
+    return (<BasketWrapper>
+        <BasketInner>
             <Header>
                 <Status />
             </Header>
@@ -43,6 +43,6 @@ export const Basket: FC = observer(() => {
                         </BuyArea>
                     </Body>
             }
-        </BasketWrapper>
-    </BasketPosition>)
+        </BasketInner>
+    </BasketWrapper>)
 })

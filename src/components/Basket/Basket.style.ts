@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
-export const BasketPosition = styled.div`
+export const BasketWrapper = styled.div`
     position: absolute;
-    top: 0px;
+    top: 15px;
     right: 0px;
     height: 100%;
     width: auto;
 `
 
-export const BasketWrapper = styled.div`
+export const BasketInner = styled.div`
     position: sticky;
     width: 230px;
     top: 100px;
