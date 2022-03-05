@@ -3,11 +3,12 @@ import { observer } from "mobx-react-lite"
 import { SyntheticEvent } from "react"
 
 import { Button } from "../ui/common"
-import { Popup, Container, Field, Form, FormWrupper, Title, BackgroundLayer } from "./Form.style"
+import { PopupWrapper, Container, 
+    Field, Form, FormWrupper, Title, PopupBackground } from "./Popup.style"
 import FormStore from "../../stores/FormStore"
 import basketStore from "../../stores/basketStore"
 
-export const MyForm = observer(() => {
+export const Popup = observer(() => {
     const HandlerBLClick = (e: SyntheticEvent) => {
         e.stopPropagation()
         FormStore.makeInvisible()
@@ -20,8 +21,8 @@ export const MyForm = observer(() => {
 
     return (<>
         {FormStore.isVisible ? <>
-            <Popup>
-                <BackgroundLayer onClick={HandlerBLClick}/>
+            <PopupWrapper>
+                <PopupBackground onClick={HandlerBLClick}/>
                 <FormWrupper>
                     <Formik
                         initialValues={{ name: "", phone: "", address: "" }}
@@ -38,7 +39,7 @@ export const MyForm = observer(() => {
                             </Form>
                         )} />
                 </FormWrupper>
-            </Popup>
+            </PopupWrapper>
         </>
             : <></>}
     </>)

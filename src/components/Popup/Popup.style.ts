@@ -20,7 +20,7 @@ export const Title = styled.h4`
     
 `
 
-export const Popup = styled.div`
+export const PopupWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ export const Bg = styled.div`
     bottom: 0px;
 `
 
-export const BackgroundLayer = styled.div`
+export const PopupBackground = styled.div`
     position:absolute;
     top: 0px;
     left: 0px;

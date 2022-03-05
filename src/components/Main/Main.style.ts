@@ -15,7 +15,8 @@ export const MainItems = styled.div`
 export const GroupWrapper = styled.div`
     width: 100%;
     height: 100%;
-    margin: 0px 0px 100px 0px;
+    padding: 0px 0px 100px 0px;
+    box-sizing: border-box;
 `
 
 export const MainTitle = styled.h2`
