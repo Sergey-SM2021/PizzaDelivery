@@ -1,4 +1,5 @@
-import {observer} from "mobx-react-lite";
+import {observer} from "mobx-react-lite"
+
 import { Button, Container } from "../../ui/common"
 import
     { ActionWrapper,
@@ -9,7 +10,7 @@ import
     DayDishPrice,
     DishDayTitle,
         DishDayInfoWrapper,
-    DayDishPreview } from "./OfferStyled"
+    DayDishPreview } from "./Offer.style"
 import OfferStore from "../../../stores/OfferStore"
 import basketStore from "../../../stores/basketStore"
 import { DishIngredients } from "../../DishIngredients/DishIngredients"

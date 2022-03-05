@@ -19,6 +19,7 @@ class BasketStore {
     }
     clear = () => {
         this.items = []
+        this.queueOrder = 1
     }
     delete = (id: string) => {
         this.queueOrder = 1

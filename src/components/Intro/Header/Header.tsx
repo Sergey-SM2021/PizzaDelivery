@@ -1,15 +1,17 @@
 import { FC } from "react"
+
 import { Container } from "../../ui/common"
-import { HeaderInner, HeaderWrapper, MenuList, MenuListItem } from "./HeaderStyled"
+import { HeaderInner, HeaderWrapper, MenuList, MenuListItem } from "./Header.style"
 import {StyledInput} from "../../general/PromoInput";
 import { ReactComponent as Logo } from "../../../assets/Icons/logo.svg"
-export const Header: FC = () => {
+import { observer } from "mobx-react-lite";
 
+export const Header: FC = observer(() => {
     return (<HeaderWrapper>
         <Container>
             <HeaderInner>
                 <Logo/>
-                 <MenuList>
+                <MenuList>
                         <MenuListItem>О компании</MenuListItem>
                         <MenuListItem>Наш ресторан</MenuListItem>
                         <MenuListItem>Акции</MenuListItem>
@@ -18,4 +20,4 @@ export const Header: FC = () => {
             </HeaderInner>
         </Container>
     </HeaderWrapper>)
-}
+})

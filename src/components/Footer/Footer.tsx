@@ -1,4 +1,5 @@
 import { FC } from "react"
+import { observer } from "mobx-react-lite"
 
 import vk from '../../assets/img/footer/vk.png'
 import telegram from '../../assets/img/footer/telegram.png'
@@ -6,7 +7,7 @@ import inst from '../../assets/img/footer/inst.png'
 import { FooterContent, FooterWrapper, Icon, Icons } from "./FooterStyled"
 import { Container } from "../ui/common"
 
-export const Footer: FC = () => {
+export const Footer: FC = observer(() => {
     return (<FooterWrapper>
         <Container>
             <FooterContent>
@@ -19,4 +20,4 @@ export const Footer: FC = () => {
             </FooterContent>
         </Container>
     </FooterWrapper>)
-}
+})

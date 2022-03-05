@@ -1,6 +1,6 @@
 import { FC } from "react"
 
-import Item from "../Item/Item"
+import {Item} from "../Item/Item"
 import { Container } from "../ui/common"
 import ItemsStore from "../../stores/ItemsStore"
 import { MainItems, MainWrapper, MainTitle, GroupWrapper } from "./Main.style"
