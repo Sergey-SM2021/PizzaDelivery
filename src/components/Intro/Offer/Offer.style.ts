@@ -9,28 +9,6 @@ export const IntroContent = styled.div`
     position: relative;
     left: 800px;
     width: 50%;
-    @media(max-width: 1050px){
-        right: -400px;
-        width: 50%;
-    }
-    @media(max-width: 784px){
-        right: -330px;
-    }
-    @media(max-width: 724px){
-        right: -300px;
-    }
-    @media(max-width: 700px){
-        right: -260px;
-    }
-    @media(max-width: 585px){
-        p{
-            font-size:20px;
-        }
-        span{
-            font-size:15px;
-        }
-        right: -280px;
-    }
 `
 
 export const IntroWrapper = styled.div`
@@ -58,7 +36,7 @@ export const DishDayTicket = styled.span`
 `
 
 export const DishDayTitle = styled.div`
-    font-weight: 500;
+    font-weight: 700;
     font-size: 84px;
     margin-bottom: 20px;
     @media(max-width: 585px){

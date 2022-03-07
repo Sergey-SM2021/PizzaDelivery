@@ -17,6 +17,6 @@ export const Item:FC<IItem> = observer(({description,price,structure,title,img,i
         <ItemTitle>{title}</ItemTitle>
         <ItemDescription>{description}</ItemDescription>
         <DishIngredients ingredients={structure}/>
-        <Button onClick={clickHandler}>{price }$  В корзину</Button>
+        <Button onClick={clickHandler}>{price }₽  В корзину</Button>
     </ItemWrapper>)
 })

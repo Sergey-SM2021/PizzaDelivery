@@ -5,7 +5,7 @@ export default createGlobalStyle`
     *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif; ;
     }
     html{
       height: 100%;
@@ -47,9 +47,9 @@ export default createGlobalStyle`
 
 export const Button = styled.button`
     background: #F4900C;
-    font-weight: 600;
+    font-weight: 700;
     font-size: large;
-    width: 176px;
+    width: 180px;
     height: 36px;
     cursor: pointer;
     border: none;

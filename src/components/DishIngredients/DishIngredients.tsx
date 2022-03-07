@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite"
 
 import { IStructure } from "../../models/model"
-import { StructureItem, StructureWrapper } from "./DishIngredients.style"
+import { StructureItems, StructureWrapper } from "./DishIngredients.style"
 
 type TProps = {
     ingredients: Array<IStructure> | undefined,
@@ -12,6 +12,6 @@ export const DishIngredients = observer(({ ingredients,isOffer }: TProps) => {
     return (<>{ingredients?.map(el =>
         <StructureWrapper>
             <img src={el.img} />
-            <StructureItem isOfer={isOffer}>{el.structure.join(", ")}</StructureItem>
+            <StructureItems isOfer={isOffer}>{el.structure.join(", ")}</StructureItems>
         </StructureWrapper>)}</>)
 })
